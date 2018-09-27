@@ -1,0 +1,21 @@
+#CATALINA_OPTS=-Djava.awt.headless=true -Dfile.encoding=UTF-8 
+#-server -Xms1500m -Xmx24000m 
+#-XX:NewSize=256m -XX:MaxNewSize=256m -XX:PermSize=256m 
+#-XX:MaxPermSize=512m -XX:+DisableExplicitGC 
+#-XX:+UseConcMarkSweepGC 
+#-XX:+CMSClassUnloadingEnabled
+#-XX:+DisableExplicitGC
+#-XX:HeapDumpPath=/opt/tomcat/logs/java_heapdump_pid_%p.log
+#-Djava.awt.headless=true
+#-Djava.security.egd=file:/dev/./urandom
+
+export CATALINA_OPTS="$CATALINA_OPTS -javaagent:/javaagent/elastic-apm-agent-0.7.0.jar
+                                     -Delastic.apm.service_name=APM_Tomcat-237
+                                     -Delastic.apm.server_url=http://192.168.0.33:8200
+                                     -Delastic.apm.application_packages=org.example"
+
+#-javaagent:/javaagent/elastic-apm-agent-0.7.0.jar
+#-Delastic.apm.service_name=APM_Tomcat-237
+#-Delastic.apm.server_url=http://192.168.0.33:8200
+#-Delastic.apm.application_packages=org.example  
+
