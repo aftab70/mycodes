@@ -1,4 +1,4 @@
-vim /opt/tomcat/bin/setenv.sh
+#vim /opt/tomcat/bin/setenv.sh
 
 export CATALINA_OPTS="-Dcom.sun.management.jmxremote
                       -Dcom.sun.management.jmxremote.port=9000
