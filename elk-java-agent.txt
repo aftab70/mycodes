@@ -1,5 +1,6 @@
 #ELK stach apm-server java-gent configuration.
 #To download java agent for elk stach click on given link :- https://search.maven.org/search?q=a:elastic-apm-agent
+#You need to add or create vim /opt/tomcat/bin/setenv.sh and add given code to your setenv.sh bin file to enable elastic-apm-agent.
 
 
 export CATALINA_OPTS="$CATALINA_OPTS -javaagent:/javaagent/elastic-apm-agent-0.7.0.jar
