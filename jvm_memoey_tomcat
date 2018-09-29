@@ -1,0 +1,10 @@
+#How to increase jvm memory in tomcat.
+#You need to create setenv.sh bin file under /opt/tomcat/bin/
+#like vim vim /opt/tomcat/bin/setenv.sh
+#and add given code and save and exit and to get effect need to restart tomcat service.
+
+export CATALINA_OPTS="$CATALINA_OPTS -Xms1048m"
+export CATALINA_OPTS="$CATALINA_OPTS -Xmx4096m"
+export CATALINA_OPTS="$CATALINA_OPTS -XX:MaxPermSize=4096m"
+
+
