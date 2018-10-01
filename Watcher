@@ -1,0 +1,15 @@
+# Watcher e-mail alert configuration given below :--
+
+# For Subject :--  
+
+[ WARNING ] CPU  Over Threshold for [{{ctx.payload.results.size}}] Hosts
+
+# Message body 
+
+Dear Admin,
+
+CPU threshold exceeded 80% in our local environment, Please find the below machine details:--
+
+{{ctx.metadata.name}} {{ctx.metadata.watcherui.threshold_comparator}} {{ctx.metadata.watcherui.threshold}}, {{#ctx.payload.results}} host {{key}}: {{value}}: {{/ctx.payload.results}}
+
+Sender - Kibana
