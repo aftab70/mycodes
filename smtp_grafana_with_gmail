@@ -1,0 +1,16 @@
+[smtp]
+enabled = true
+host = smtp.gmail.com:465
+user = aftabali025
+# If the password contains # or ; you have to wrap it with trippel quotes. Ex """#password;"""
+password = Baf7Sam@123
+;cert_file =
+;key_file =
+skip_verify = false
+from_address = aftabali025@gmail.com
+from_name = Grafana
+# EHLO identity in SMTP dialog (defaults to instance_name)
+;ehlo_identity = dashboard.example.com
+
+[emails]
+;welcome_email_on_sign_up = false
