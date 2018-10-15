@@ -1,0 +1,12 @@
+xpack.notification.email.account:
+    ses_account:
+        email_defaults:
+            from: xxxxxxxxxxxxxxxxxxxxxxxx
+        smtp:
+            auth: true
+            starttls.enable: true
+            starttls.required: true
+            host: email-smtp.us-east-1.amazonaws.com
+            port: 587
+            user: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            password: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
