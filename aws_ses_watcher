@@ -1,7 +1,7 @@
 xpack.notification.email.account:
     ses_account:
         email_defaults:
-            from: xxxxxxxxxxxxxxxxxxxxxxxx
+            from: example@exaple.com
         smtp:
             auth: true
             starttls.enable: true
