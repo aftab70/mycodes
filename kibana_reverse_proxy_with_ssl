@@ -1,6 +1,6 @@
 server {
     listen 443 ssl;
-    server_name 192.168.0.238;
+    server_name default_server;
     include snippets/self-signed.conf;
     include snippets/ssl-params.conf;
 
