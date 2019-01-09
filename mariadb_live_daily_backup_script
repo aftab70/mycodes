@@ -1,1 +1,7 @@
 #!/bin/bash
+
+PASS="Your_password"
+NOW="$(date +"%d-%m-%Y")"
+
+mysqldump --single-transaction=TRUE -u root -p$PASS database_name > database_backup_$NOW.sql
+
