@@ -1,7 +1,9 @@
 #!/bin/bash
+set -x
 
-PASS="Your_password"
+MARIADB="mysqldump --single-transaction=TRUE"
+USER="username"
+PASS="password"
 NOW="$(date +"%d-%m-%Y")"
 
-mysqldump --single-transaction=TRUE -u root -p$PASS database_name > database_backup_$NOW.sql
-
+$MARIADB -u$USER -p$PASS database_name > database_backup_$NOW.sql
