@@ -1,3 +1,7 @@
+setenv.sh
+
+#create if not available
+
 export CATALINA_OPTS="$CATALINA_OPTS -javaagent:/opt/tomcat/elastic/elastic-apm-agent-1.7.0.jar
                                      -Delastic.apm.service_name=APM_Tomcat-227
                                      -Delastic.apm.server_url=http://localhost:8200
