@@ -6,6 +6,6 @@
 
 
 export CATALINA_OPTS="$CATALINA_OPTS -javaagent:/javaagent/elastic-apm-agent-0.7.0.jar
-                                     -Delastic.apm.service_name=APM_Tomcat-237
-                                     -Delastic.apm.server_url=http://192.168.0.33:8200
+                                     -Delastic.apm.service_name=APM_Tomcat
+                                     -Delastic.apm.server_url=http://192.168.0.XX:8200
                                      -Delastic.apm.application_packages=org.example"
